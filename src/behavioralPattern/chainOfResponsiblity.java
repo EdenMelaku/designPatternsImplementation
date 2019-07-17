@@ -1,8 +1,25 @@
 package behavioralPattern;
 
-import java.util.Date;
+
 
 public class chainOfResponsiblity {
+
+    public static void main(String ... args){
+
+        HealthCare firstAid=new FirstAid();
+        HealthCare clinic = new Clinic();
+        HealthCare hospital = new Hospital();
+
+        firstAid.nextCenter=clinic;
+        clinic.nextCenter=hospital;
+        hospital.nextCenter=null;
+
+        firstAid.diagnosePatient();
+
+
+    }
+
+
 
 }
 
@@ -23,6 +40,7 @@ class FirstAid extends HealthCare{
     @Override
     public void diagnosePatient() {
         System.out.println("patient given first aid ");
+        nextCenter.diagnosePatient();
     }
 }
 
@@ -32,6 +50,17 @@ class Clinic extends HealthCare{
 
     @Override
     public void diagnosePatient() {
-        System.out.println("person treated in ");
+        System.out.println("person treated in clinic");
+        nextCenter.diagnosePatient();
+
+    }
+}
+
+class Hospital extends HealthCare{
+
+
+    @Override
+    public void diagnosePatient() {
+        System.out.println("person treated in hospital");
     }
 }
