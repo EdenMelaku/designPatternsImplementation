@@ -1,3 +1,12 @@
+
+/*
+
+chain of responsiblity exists in health organzations
+if some one got an accident they first
+got to FirstAid ---> clinic ------->hospital
+
+ */
+
 package behavioralPattern;
 
 

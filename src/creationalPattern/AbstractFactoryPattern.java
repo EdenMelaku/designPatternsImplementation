@@ -1,3 +1,18 @@
+/*
+
+this is abstract factory pattern implemntaton, it is a member of creational pattern and
+if is a 1 level extention of factory patterns which includes abstract factories of 2 or more factories of completely
+different types of interfaces.
+
+this example includes 2 factories
+ solidFactory( produces instances of Solid[salt, iron])
+ liquidFactory( produces instances of Liquid[water, alkaline, benzene ])
+
+ there is a abstract class AbstractFactory-- contains abstract methods of the factories
+there is factory producer -- returns one of the two factorires
+        */
+
+
 package creationalPattern;
  interface Solid{
 

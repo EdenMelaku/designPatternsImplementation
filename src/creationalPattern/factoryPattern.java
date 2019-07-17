@@ -1,3 +1,16 @@
+
+/*
+this class implments the factory pattern
+it creates a factory for interface book
+
+novel, scienceBooks, historyBooks implements books
+
+bookFactory creates instances of one of the stated classes
+
+ */
+
+
+
 package creationalPattern;
 
 interface Book{
