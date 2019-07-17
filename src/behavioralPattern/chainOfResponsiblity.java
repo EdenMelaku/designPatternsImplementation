@@ -6,46 +6,32 @@ public class chainOfResponsiblity {
 
 }
 
- abstract class Court{
+ abstract class HealthCare{
 
-     int case_number;
-     Date applicationDate;
-     boolean status;
-     Court nextCourt;
 
-     abstract public void writeDecision();
-     abstract public void setNextCourt();
+     HealthCare nextCenter;
+
+     abstract public void diagnosePatient();
 
 
 
 }
 
-class FirstLevelCourt extends Court{
-    int case_number;
-    Date applicationDate;
-    boolean status;
-    Court nextCourt;
-    @Override
-    public void writeDecision() {
+class FirstAid extends HealthCare{
 
+
+    @Override
+    public void diagnosePatient() {
+        System.out.println("patient given first aid ");
     }
+}
+
+
+class Clinic extends HealthCare{
+
 
     @Override
-    public void setNextCourt() {
-
-    }
-}class FirstLevelCourt extends Court{
-    int case_number;
-    Date applicationDate;
-    boolean status;
-    Court nextCourt;
-    @Override
-    public void writeDecision() {
-
-    }
-
-    @Override
-    public void setNextCourt() {
-
+    public void diagnosePatient() {
+        System.out.println("person treated in ");
     }
 }
