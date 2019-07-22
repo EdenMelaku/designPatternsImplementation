@@ -1,3 +1,7 @@
+/*
+is a way to change an objects behaviour and structue depending on its internal values
+ */
+
 package behavioralPattern;
 
 
