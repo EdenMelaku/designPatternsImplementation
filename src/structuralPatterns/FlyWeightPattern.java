@@ -1,5 +1,6 @@
 /*
 allows to support large number of granular object by allowing them to be shared with intrinsic values and stored with in a factory
+
  */
 package structuralPatterns;
 
