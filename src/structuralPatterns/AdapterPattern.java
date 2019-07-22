@@ -1,6 +1,13 @@
+/*
+making different classes communicate in a similar manner
+creates classes of different types so that they can become interchangeable
+ */
+
+
 package structuralPatterns;
 
-// the target class
+// the target class- which we wish to implement the adapter
+
 class Car{
 
     private double speed;
@@ -20,7 +27,9 @@ class Car{
         this.color = color;
     }
 }
-//Adapter
+
+
+//Adapter- the class that provides the join for the 2 class, houses the methods for conjoining functionality between them
 class BikeAdaptor extends Car{
     private MotorBike mb=new MotorBike();
 
@@ -40,7 +49,7 @@ class BikeAdaptor extends Car{
 
 }
 
-//Adaptee
+//Adaptee- class that we wiah to give access to the methods and functionality of the target class
 
 class MotorBike
 {

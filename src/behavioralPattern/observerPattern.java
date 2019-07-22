@@ -1,5 +1,8 @@
 package behavioralPattern;
 /*
+oberver pattern facilitates communication between any parent class and its child classes
+changes in parent class will be sent to any dependent child class
+
 this example shows observer pattern with a hirarchy of a managmet
 process which includes the general manager sends any notification to the lower level managers
  */

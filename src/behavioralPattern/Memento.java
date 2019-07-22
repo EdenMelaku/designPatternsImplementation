@@ -1,3 +1,7 @@
+/*
+
+is a way to capture a internal state of an object  without violating encapulation, and preserve that state
+ */
 package behavioralPattern;
 
 

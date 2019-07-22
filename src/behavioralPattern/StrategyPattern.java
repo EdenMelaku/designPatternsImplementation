@@ -1,3 +1,7 @@
+/*
+algorithms vary based on the class used
+ */
+
 package behavioralPattern;
 
 import java.util.ArrayList;
