@@ -16,13 +16,13 @@ class Person extends Animal{
     private String color;
 
     public Person(String socialSecNum){
-        this.setSocialSecNum(socialSecNum);
+        this.socialSecNum=socialSecNum;
 
     }
 
     public Person(String socialSecNum,String color){
-        this.setSocialSecNum(socialSecNum);
-        this.setColor(color);
+        this.socialSecNum=socialSecNum;
+        this.color=color;
 
     }
     @Override
